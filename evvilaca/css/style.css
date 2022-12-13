@@ -1,0 +1,46 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: #333;
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    height: 150px;
+    border-radius: 100%;
+}
+
+
+/* PRESENTATION */
+#presentation {
+    background-image: url(../images/orion.jpg);
+    background-color: #222;
+    color: white;
+    padding: 30px;
+}
+
+#presentation p {
+    margin-top: -14px;
+}
+
+/* ************************************************************* */
+
+#skills {
+    margin: auto;
+    max-width: 720px;
+    padding: 20px;
+}
+
+.skill {
+    text-align: left;
+    padding-top: 10px;
+}
+
+.skill p {
+    margin-top: -18px;
+}
+
+.skill h4 {
+    margin-top: -7px;
+}
