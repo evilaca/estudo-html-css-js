@@ -1,0 +1,13 @@
+@media (max-width: 850px){
+
+
+    .container .result-box {
+
+        width: 90%;
+    }
+
+    .container form {
+        width: 90%;
+    }
+
+}
