@@ -1,0 +1,59 @@
+form {
+    width: 500px;
+    height: 150px;
+    padding: 2em;
+    background: #e2e2e2;
+    font-size: 15px;
+}
+
+/* input {
+    outline: 0;
+    padding: 6px;
+}
+input:focus {
+    border: 2px solid red;
+    border-radius: 15px;
+} */
+
+input:not([type="email"]) {
+    border: 2px solid #f33;
+}
+input[type="email"] {
+    border: 2px solid blue;
+    box-shadow: 0px 0px 5px 5px pink inset;
+}
+
+a:hover {color: #f33;}
+a:visited {color: green;}
+a:active {color: aqua;}
+a {
+    transition: 0.2s;
+    text-decoration: none;
+}
+
+button {
+    background: #333;
+    color: #fff;
+    padding: 12px;
+    border: 0;
+    transition: 0.3s;
+    cursor: pointer;
+}
+button:hover {
+    background: #fff;
+    color: #333;
+    border-radius: 12px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+ul li:first-child {
+    color: green;
+}
+
+ul li:last-child {
+    color: #f33;
+}
+
+ul li:nth-child(3) {
+    color: aqua;
+}
