@@ -7,14 +7,201 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <title>Estudo JS</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: #f33;
+            border-radius: 10px;
+            display: none;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 
 <body>
-    <p>Hello World</p>
+
+<!-- <body onload="loadPage()"> -->
+
+    <!-- <form onsubmit="enviar()"> -->
+    <form id="form">
+        <label for="">Informe sua Idade:</label><br>
+        <input type="number" placeholder="18" id="age">
+        <br>
+        <br>
+        <button type="submit">Enviar</button>
+    </form>
+
+    <button id="btn">Diga olá</button>
+
+    <!-- <form action="">
+        <input type="text" name="" id="">
+        <button type="submit">Enviar</button>
+    </form> -->
+
+    <!-- <p onmouseover="trocarTexto()" onmouseout="voltarTexto()">Passe o mouse aqui!</p> -->
+
+    <!-- <button onclick="saudacoes()">Diga olá</button>
+    <button onclick="mostraCaixa()">Mostrar caixa</button>
+    <div id="caixa"></div> -->
+
+    <!-- <main id="container">
+        <div id="lista-container">
+            <ul id="lista">
+                <li>Item 01</li>
+                <li>Item 02</li>
+                <li>Item 03</li>
+            </ul>
+        </div>
+    </main> -->
+
+    <script>
+        const idade = document.getElementById('age');
+
+        form.addEventListener('submit', enviar);
+
+        function enviar(e) {
+            e.preventDefault();
+
+            const idade = document.getElementById('age');
+            if(idade.value < 18) {
+                alert('Menor de idade!')
+            } else {
+                alert('Maior de idade!')
+            }
+            // alert('Alo')
+        }
+
+        const btn = document.getElementById('btn');
+        btn.addEventListener('click', function() {
+            alert('Olá :)')
+        })
+
+        // function loadPage() {
+        //     alert('Carregou!')
+        // }
+
+        // function trocarTexto() {
+        //     const texto = document.querySelector('p');
+        //     texto.innerHTML = 'Olá :)'
+        // }
+        // function voltarTexto() {
+        //     const texto = document.querySelector('p');
+        //     texto.innerHTML = 'Passe o mouse aqui!'
+        // }
+
+        // function saudacoes() {
+        //     alert('Olá :)')
+        // }
+        // function mostraCaixa() {
+        //     const caixa = document.getElementById('caixa');
+        //     caixa.style.display = 'block'
+        // }
+
+        // const main = document.getElementById('container');
+        // const div = document.getElementById('lista-container');
+        // const ul = document.getElementById('lista');
+        // console.log(ul.parentNode.parentNode);
+        // console.log(ul.childNodes)
+        // console.log(ul.childNodes[1])
+        // ul.childNodes[1].innerHTML = 'Olá mundo'
+        // console.log(document.documentElement.firstChild);
+        // console.log(document.documentElement.lastChild);
+    </script>
+
+    <!-- <img src="./img/logo-html.png" alt="Logo do HTML5" id="logo"> -->
+    <!-- <p id="text" class="texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+
+    <div id="container"></div> -->
+    <!-- <p id="text">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium aliquid aperiam dicta error architecto molestiae!
+    </p> -->
+
+    <!-- <p class="text">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi quis nisi accusamus tempore, ipsam facere!
+    </p>
+    <span class="text">Olá mundo!</span>
+    <h5 class="text">Hello World!</h5> -->
+
+    <!-- <p>Hello World</p> -->
+
+    <!-- <div id="container">
+        <h1 class="title">Olá Mundo!</h1>
+        <h2 class="title">Olá Mundo! 02</h2>
+    </div> -->
+
+    <!-- <p name="text">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui quasi incidunt natus dolorum quam neque.
+    </p>
+    <span>Hello World!</span>
+    <span>Hello World!</span>
+    <span>Hello World!</span> -->
+
+
 </body>
 <script src="./index.js"></script>
 
 <script>
+    // const logo = document.getElementById('logo');
+    // logo.setAttribute('width', '400');
+    // logo.removeAttribute('width');
+    // const attribute = logo.getAttribute('width');
+    // console.log(attribute);
+    
+    // const container = document.getElementById('container');
+    // const logoHTML = document.createElement('img');
+    // const title = document.createElement('h1');
+    // title.innerHTML = 'Logo do HTML5';
+    // logoHTML.src = './img/logo-html.png';
+    // logoHTML.width = '150';
+    // container.appendChild(logoHTML);
+    // container.appendChild(title);
+    // container.removeChild(title);
+    
+    // const div = document.createElement('div');
+    // console.log(div);
+    // div.innerHTML = 'Olá mundo!'
+
+    // const texto = document.getElementById('text');
+    // const container = document.getElementById('container');
+
+    // texto.style.color = '#f33';
+    // texto.style.fontSize = '1.5em';
+    // container.style.width = '100px';
+    // container.style.height = '100px';
+    // container.style.background = '#444';
+
+
+    // // texto.classList.add('blue');
+    // if(texto.classList.contains('blue')){
+    //     alert('Elemento contém a classe Blue')
+    // } 
+    // texto.classList.remove('texto');
+    // texto.classList.remove('blue');
+    // texto.classList.add('red');
+
+    // const texto = document.getElementById('text')
+    // const content = 'Olá mundo!';
+    // texto.innerHTML = content;
+    // const content = texto.innerHTML;
+    // console.log(content)
+
+
+    // const element = document.querySelector('.text');
+    // const elements = document.querySelectorAll('.text');
+    // console.log(element);
+    // console.log(elements);
+
+    // const texto = document.getElementsByName('text');
+    // const span = document.getElementsByTagName('span');
+
+    // console.log(texto)
+    // console.log(texto[0])
+    // console.log(span)
+    // console.log(span[0])
+    // span[1].innerHTML = 'Olá mundo!'
+
+
     // console.log(1 + 1)
     // var nome = 'Luis'
     // console.log('Olá, seja bem vindo ' + nome)
@@ -22,6 +209,7 @@
 
     // console.error('Olá :)')
     // console.warn('Atenção!')
+
 
     // alert('Olá mundo!')
 
@@ -35,8 +223,10 @@
     //         alert('Cancelado!')
     //     }
 
-    
+    // const div = document.getElementById('container');
+    // const titulo = document.getElementsByClassName('title');
 
+    // console.log(titulo)
 
 </script>
 

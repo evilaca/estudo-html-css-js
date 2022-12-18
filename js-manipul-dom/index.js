@@ -1,4 +1,4 @@
-const text = document.querySelector('p');
+// const text = document.querySelector('p');
 
-text.innerHTML = 'Olá Mundo!'
-text.style.color = '#f33'
+// text.innerHTML = 'Olá Mundo!'
+// text.style.color = '#f33'
