@@ -175,3 +175,180 @@ h2 {
     line-height: 25px;
 }
 
+/* JOBS */
+#jobs-section {
+    text-align: center;
+    padding-top: 100px;
+}
+
+#jobs-section h2 {
+    color: #242526;
+    margin-bottom: 30px;
+}
+
+#jobs-section p {
+    margin-bottom: 50px;
+}
+
+#jobs-section a {
+    font-weight: bold;
+    color:#22A2F2;
+}
+
+.job-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+
+.job-box {
+    flex: 1 1 200px;
+    margin-left: 25px;
+    margin-right: 25px;
+    height: 300px;
+    background-size: cover;
+    border-right: 2px solid #242526;
+    border-bottom: 2px solid #242526;
+}
+
+.proj1 {
+    background-image: url(../img/proj1.jpg);
+}
+.proj2 {
+    background-image: url(../img/proj2.jpg);
+}
+.proj3 {
+    background-image: url(../img/proj3.jpg);
+}
+
+/* FOOTER */
+footer {
+    padding: 50px 0;
+    background-color: #242526;
+    color: #fff;
+    text-align: center;
+}
+
+footer img {
+    height: 80px;
+    margin: 30px 0;
+}
+
+footer p {
+    margin-top: 25px;
+}
+
+footer form {
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer input, footer textarea {
+    border: none;
+    padding: 15px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    width: 100%;
+    display: block;
+}
+
+footer .detail {
+    font-weight: bold;
+}
+
+/* RESPONSIVO */
+@media(max-width: 450px) {
+    /* GERAL */
+    p, input, textarea {
+        font-size: 1.2rem;
+    }
+    
+    /* NAVBAR */
+    #navbar h2 {
+        display: none;
+    }
+    #navbar img {
+        top: 9px;
+    }
+    #navbar ul {
+        margin-top: 1.2rem;
+    }
+
+    /* BANNER */
+    #main-banner {
+        height: 40vh;
+        padding-top: 5vh;
+        padding-bottom: 10vh;
+    }
+    #banner-info {
+        width: 60%;
+        padding: 10px;
+    }
+    #banner-info img {
+        height: 150px;
+    }
+    #banner-info p {
+        margin: 0;
+        width: auto;
+    }
+
+    /* ABOUT */
+    #about-section {
+        padding: 2rem;
+        height: auto;
+        padding-bottom: 50px;
+    }
+
+    /* SKILLS */
+    #skills-section {
+        margin-top: -35px;
+        width: 90%;
+    }
+    #skills-section .container {
+        flex-direction: column;
+    }
+    .skills-container h3, .skills-container .subtitle {
+        font-size: 1.3rem;
+    }
+    .skills-container.central {
+        border-left: none;
+        border-right: none;
+        border-top: 1px solid #22A2F2;
+    }
+    .bsmob {
+        border-top: 1px solid #22A2F2;
+    }
+
+    /* JOBS */
+    #jobs-section h2, #jobs-section p {
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .job-container {
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+    .job-box {
+        margin-bottom: 2rem;
+        flex: 1 1 300px;
+    }
+
+    /* FOOTER */
+    footer {
+        padding: 50px 15px;
+    }
+    footer form {
+        width: 100%;
+    }
+    .detail {
+        margin-top: 10px;
+        display: block;
+    }
+}
