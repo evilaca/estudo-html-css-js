@@ -1,7 +1,5 @@
 /* GERAL */
-/* * {
-    box-sizing: border-box;
-} */
+
 body, p, h1, h2, input, textarea {
     margin: 0;
     font-family: Roboto;
@@ -61,8 +59,10 @@ h2 {
     height: 60vh;
     background-image: url(../img/bg-banner.png);
     background-size: cover;
-    padding-top: 10vh;
-    /* background-position: 0px; */
+    /* padding-top: 10vh; */
+    padding: 10vh;
+    background-position: 0px;
+
 }
 
 #banner-info {
@@ -71,7 +71,7 @@ h2 {
     margin-right: auto;
     text-align: center;
     color: #fff;
-    padding: 50px;
+    /* padding: 50px; */
 }
 
 #banner-info img {
@@ -261,6 +261,8 @@ footer .detail {
     font-weight: bold;
 }
 
+
+
 /* RESPONSIVO */
 @media(max-width: 450px) {
     /* GERAL */
@@ -286,15 +288,17 @@ footer .detail {
         padding-bottom: 10vh;
     }
     #banner-info {
-        width: 60%;
-        padding: 10px;
+        width: 100%;
+        padding: 5px;
     }
     #banner-info img {
-        height: 150px;
+        height: 130px;
     }
     #banner-info p {
-        margin: 0;
-        width: auto;
+        margin: 0px;
+        width: 100%;
+        padding: 10px;
+
     }
 
     /* ABOUT */
